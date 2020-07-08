@@ -30,8 +30,21 @@ def help
   puts "- exit : exits this program"
 end
 
-def play
-  
+def play(songs)
+  puts "Please enter a song name or number:"
+  user_selection = gets.strip
+  song_exists = false
+  song_number = 1 
+  songs.each do |song|
+    if user_selection.to_i == song_number
+      puts "Playing #{song}"
+    elsif user_selection == song
+      puts "Playing #{song}"
+    else
+      puts "Invalid input, please try again"
+    end
+    song_number += 1
+  end
 end
 
 def list(songs)
@@ -50,4 +63,5 @@ def run
 
 end
 
-list(songs)
+#list(songs)
+play
