@@ -62,9 +62,9 @@ def run
     if user_in == "help"
       help
     elsif user_in == "play"
-      play
+      play(songs)
     elsif user_in == "list"
-      list
+      list(songs)
     elsif user_in == "exit"
       exit_jukebox
     end
