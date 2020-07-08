@@ -73,3 +73,4 @@ end
 
 #list(songs)
 #play(songs)
+run
