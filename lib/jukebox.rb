@@ -40,7 +40,7 @@ def play(songs)
       puts "Playing #{song}"
     elsif user_selection == song
       puts "Playing #{song}"
-    else
+    elsif (user_selection.to_i != song_number) && (user_selection != song)
       puts "Invalid input, please try again"
     end
     song_number += 1
