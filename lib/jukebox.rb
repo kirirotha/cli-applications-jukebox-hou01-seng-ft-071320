@@ -38,13 +38,15 @@ def play(songs)
   songs.each do |song|
     if user_selection.to_i == song_number
       puts "Playing #{song}"
+      song_exists = true
     elsif user_selection == song
       puts "Playing #{song}"
-    elsif (user_selection.to_i != song_number) && (user_selection != song)
-      puts "Invalid input, please try again"
+      song_exists = true
     end
     song_number += 1
   end
+   if song_exists == false
+     puts "Invalid input, please try again"
 end
 
 def list(songs)
