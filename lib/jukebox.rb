@@ -45,8 +45,9 @@ def play(songs)
     end
     song_number += 1
   end
-   if song_exists == false
-     puts "Invalid input, please try again"
+    if song_exists == false
+      puts "Invalid input, please try again"
+    end
 end
 
 def list(songs)
