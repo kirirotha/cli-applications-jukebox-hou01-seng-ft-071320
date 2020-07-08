@@ -52,12 +52,24 @@ def list(songs)
 end
 
 def exit_jukebox
-  
+  puts "Goodbye"
 end
 
 def run
-
+  while user_in != "exit" do
+    puts "Please enter a command:"
+    user_in = gets.strip
+    if user_in == "help"
+      help
+    elsif user_in == "play"
+      play
+    elsif user_in == "list"
+      list
+    elsif user_in == "exit"
+      exit_jukebox
+    end
+  end
 end
 
 #list(songs)
-play(songs)
+#play(songs)
