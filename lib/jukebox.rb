@@ -64,4 +64,4 @@ def run
 end
 
 #list(songs)
-play
+play(songs)
