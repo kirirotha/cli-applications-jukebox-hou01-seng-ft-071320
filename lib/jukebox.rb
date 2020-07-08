@@ -38,7 +38,7 @@ def list(songs)
   counter = 0
   songs.each do |song|
     puts "#{counter}. #{song}"
-    counter +=1
+    counter += 1
   end  
 end
 
