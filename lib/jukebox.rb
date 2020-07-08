@@ -39,7 +39,7 @@ def list(songs)
   songs.each do |song|
     puts "#{counter}. #{song}"
     counter ++
-  end  
+    
 end
 
 def exit_jukebox
